@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.486865e7.css",
+    "main.js": "./static/js/main.b73e58ca.js",
+    "static/media/IMG_REUNIAO.jpg": "./static/media/IMG_REUNIAO.1e66548f169c34eb83e7.jpg",
+    "static/media/none.png": "./static/media/none.f29f0889975eb1aae63b.png",
+    "static/media/logotipo2.png": "./static/media/logotipo2.ea3516e9d496f2fb5f68.png",
+    "static/media/imgbutton.png": "./static/media/imgbutton.b92e2bc42af3be9452d9.png",
+    "index.html": "./index.html",
+    "main.486865e7.css.map": "./static/css/main.486865e7.css.map",
+    "main.b73e58ca.js.map": "./static/js/main.b73e58ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.486865e7.css",
+    "static/js/main.b73e58ca.js"
+  ]
+}
