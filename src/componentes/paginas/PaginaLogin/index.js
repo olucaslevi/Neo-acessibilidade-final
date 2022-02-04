@@ -80,9 +80,6 @@ function Login(){
             <h0>LOGIN</h0>
         </div>
         <div className="box">
-
-
-
                 {user?
                     <div id="painel_user">{user.emailVerified ? <img className='fotinha' src={user.photoURL} /> : <img className='fotinha' height={100} src={imguser}></img>}<br />
                     <p>Nome: {user?.displayName}
