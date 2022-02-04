@@ -1,0 +1,58 @@
+.pagdescription{
+    margin-top:30px;
+    align-items: center;
+    border:0px;
+    padding: 30px;
+    border-radius: 0px;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0);
+    font-size: 80px;
+}
+.div-button{
+    background-color: #ffffffab;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    border:4px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    color:rgb(34, 34, 34);
+    /** Centralizando a div ______________**/
+    display:block;
+    width: 77%;
+    margin: -4px auto -8px auto;
+    /**____________________________ **/
+    
+}
+.div-button:hover{
+    transition-duration: 0.1s;
+    transform:scale(1.09);
+    color: rgb(255, 255, 255);
+    z-index: 999;
+    background-color: rgb(27, 98, 230);
+}
+.box{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(105, 105, 105, 0.2), 0 16px 24px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    border:10px;
+    border-radius: 200px;
+    padding: 50px;
+    border-radius: 40px;
+    text-align: center;
+
+    /** Centralizando a div ______________**/
+    display:block;
+    width: 20rem;
+    margin: 10px auto 10px auto;
+    /**____________________________ **/
+}
+.fotinha{
+    border-radius: 50px;
+}
+
+
+
+
+

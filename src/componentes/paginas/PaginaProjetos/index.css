@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.container-box{
+  align-items: center;
+  float: center;
+  display:inline;
+  text-align: center;
+}
+
+.pagdescription{
+  margin-top:30px;
+  display: block;
+}
+.noticia{
+
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(105, 105, 105, 0.2);
+    align-items: center;
+    border:10px;
+    border-radius: 80px;
+    padding: 50px;
+    border-radius: 40px;
+    text-align: center;
+
+    /** Centralizando a div ______________**/
+    display:block;
+    width: 88%;
+
+    /**____________________________ **/
+}
