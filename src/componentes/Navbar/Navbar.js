@@ -160,11 +160,11 @@ function Navbar() {
 
           {
           user?<>
-          {user.photoURL?
+          <div onClick={handleClick}>{user.photoURL?
             <img  width="60" className='fotinha'  src={user.photoURL}/> 
             : 
             <img className='fotinha' width="60"  src={imguser}/>
-            }</>
+            }</div></>
           :
           button && <Button buttonStyle='btn--outline'>ACESSAR</Button>
           }

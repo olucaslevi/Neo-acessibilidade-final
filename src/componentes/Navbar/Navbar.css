@@ -13,6 +13,7 @@
   border-radius: 60%;
   cursor:pointer;
 }
+
 .botaoAcessivel{
   display: block;
   transform: translateX(250%);
