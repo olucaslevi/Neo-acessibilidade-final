@@ -38,12 +38,12 @@ const Projetos = ()=>{
     const [isEdit,setIsEdit] = useState(false);
     const [tempUuid,setTempUuid] = useState("");
 
-    const collectionRef = collection(dbFirestore,'Questions')
-    const documentRef = doc(dbFirestore, 'Questions','ZAdMxjBw30J6KW94ejPy');
+    const collectionRef = collection(dbFirestore,'Projetos')
+    const documentRef = doc(dbFirestore, 'Projetos','ZAdMxjBw30J6KW94ejPy');
 
     const usarFirebase  = async () =>{
         
-        const q = query(collection(dbFirestore,"Questions"));
+        const q = query(collection(dbFirestore,"Projetos"));
         ///realtime collect data
         const querySnapshot= await getDocs(q);
         const data = querySnapshot.docs.map((doc)=>({
@@ -72,7 +72,7 @@ const Projetos = ()=>{
     };
 
     const handleDelete = (id) => {
-        const documentRef = doc(dbFirestore, 'Questions', id);
+        const documentRef = doc(dbFirestore, 'Projetos', id);
         deleteDoc(documentRef)
         console.log(id,' Deletado com sucesso!!')
         
@@ -89,12 +89,12 @@ const Projetos = ()=>{
 
         getDocs(collectionRef)
         .then((snapshot)=>{
-            let Questions = []
+            let Projetos = []
             snapshot.docs.forEach((doc)=>{
-                Questions.push({...doc.data(), id: doc.id})
+                Projetos.push({...doc.data(), id: doc.id})
 
             })
-            console.log('Questões: ',Questions);
+            console.log('Questões: ',Projetos);
         })
         .catch(err =>{
             console.log(err.message);
@@ -147,7 +147,7 @@ const Projetos = ()=>{
         e.preventDefault();
         addDoc(collectionRef, {
             comando: todo,
-            itemA: command,
+            text: command,
             itemB: command1,
         })
         setTodo("");
@@ -170,8 +170,8 @@ const Projetos = ()=>{
                         (val,id) =>{
                     return <div key={id} className="noticia">
                     <br/>
-                    <h0>{val.comando}</h0><br/> <p>{val.itemA}</p><br/>
-                    <img src={val.itemB}/><br/>
+                    <h1>{val.comando}</h1><br/> <p>{val.itemA}</p><br/>
+                    <img width={100} src={val.itemB}/><br/>
                     {/* Deletar a postagem */}
                     <button class="btn btn-danger" onClick={()=>{handleDelete(val.id)}}>Deletar</button></div>}
                     )
