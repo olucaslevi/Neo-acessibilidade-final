@@ -27,9 +27,13 @@ function Navbar() {
   const [button, setButton] = useState(true);
   const [user,setUser] = useState({});
   const [acess, setAcess] = useState(false);
+  const [tamanho,setTamanho] = useState(0);
+  const [contraste,setContraste] = useState(false);
+
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  
 
   onAuthStateChanged(auth,(currentUser)=>{
     setUser(currentUser);
@@ -57,9 +61,17 @@ function Navbar() {
   
   const handleClose = () => setShow(false);
   const handleShow = () =>{
-    !acess?setShow(true):setShow(false); 
+    !acess?setShow(true):setShow(false);
+     
   } 
-  
+  const HandleAumentarTamanho = () => {
+    setTamanho(tamanho+1);
+    console.log(tamanho);
+  }
+  const HandleAumentarContraste = () =>{
+    setContraste(!contraste);
+    console.log(contraste);
+  }
 
   return (
     <>
@@ -82,35 +94,6 @@ function Navbar() {
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img className='imgLogo' width={65} src={logotipo}/>
           </Link>
-        
-          
-          <button onClick={handleShow} id="MybtnModal" max-width={30} className='botaoAcessivel'><img className='imgA' width={100} src={imgbutton} /><br/><p className='txtA'>Opções de Acessibilidade</p></button>
-              <Modal
-            show={show}
-            onHide={handleClose}
-            backdrop="static"
-            keyboard={false}
-          >
-            <Modal.Header closeButton>
-              <Modal.Title>Opções de Acessibilidade</Modal.Title>
-            </Modal.Header>
-            <Modal.Body> <div className="divbotoesA" gap={2}>
-              <button className='botoesA'><img className='botoesAimg' width={50} src={img1}/><br/><strong>Aumentar tamanho<br/> das fontes</strong></button>
-              <button className='botoesA'><img className='botoesAimg' width={50} src={img2}/><br/><strong>Tradutor de Libras</strong></button><br/>
-              <button className='botoesA'><img className='botoesAimg' width={50} src={img3}/><br/><strong>Leitor de Voz</strong></button>
-              <button className='botoesA'><img className='botoesAimg' width={50} src={img4}/><br/><strong>Aumentar contraste</strong></button>
-              </div>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="primary" onClick={handleClose}>
-                Fechar
-              </Button>
-              <Button variant="primary" onClick={handleClose}>
-                Restaurar padrões
-              </Button>
-                
-            </Modal.Footer>
-          </Modal>
           
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
