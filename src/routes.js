@@ -13,10 +13,10 @@ function Rotear(){
         <Router>
             <Navbar/>
             <Routes>
-                <Route exact path="basename={process.env.PUBLIC_URL}/" element={<Home/>}/>
-                <Route exact path="basename={process.env.PUBLIC_URL}/contato" element={<Contato/>}/>
-                <Route exact path="basename={process.env.PUBLIC_URL}/Login" element={<Login/>}/>
-                <Route exact path="basename={process.env.PUBLIC_URL}/projetos" element={<Projetos/>}/>
+                <Route exact path="/" element={<Home/>}/>
+                <Route exact path="/contato" element={<Contato/>}/>
+                <Route exact path="/Login" element={<Login/>}/>
+                <Route exact path="/projetos" element={<Projetos/>}/>
             </Routes>
         </Router>
     );
