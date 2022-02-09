@@ -2,7 +2,6 @@
   "homepage": "http://olucaslevi.github.io/site",
   "name": "neoacessibilidade",
   "version": "0.1.0",
-  "homepage": "./",
   "private": true,
   "dependencies": {
     "@djpfs/react-vlibras": "^2.0.0",
