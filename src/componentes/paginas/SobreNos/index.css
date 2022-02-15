@@ -1,25 +1,86 @@
-.pagdescription{
-    align-items: center;
-    border:0px;
-    padding: 30px;
-    border-radius: 0px;
-    text-align: center;
-    background-color: rgba(238, 238, 238, 0);
-    font-size: 80px;
+.titulo-sobre > h1 {
+    text-align: center !important;
+    margin-top: 2rem !important;
+    margin-bottom: 50px !important;
+    font-weight: 1000 !important;
+    line-height: 1 !important;
 }
-.sobrenos{
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(105, 105, 105, 0.2), 0 16px 24px 0 rgba(0, 0, 0, 0.19);
-    align-items: center;
-    border:10px;
-    border-radius: 200px;
-    padding: 50px;
-    border-radius: 40px;
-    text-align: center;
 
-    /** Centralizando a div ______________**/
-    display:block;
-    width: 60%;
-    margin: 10px auto 10px auto;
-    /**____________________________ **/
+.pagdescription {
+  align-items: center;
+  border: 0px;
+  border-radius: 0px;
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0);
+  font-size: 80px;
+}
+
+.sobrenos-section {
+  display: flex;
+}
+
+.sobrenos-xx {
+  background-color: #f7f9ff;
+  align-items: center;
+  padding: 50px 40px;
+  text-align: center;
+  display: block;
+  width: 60%;
+  box-shadow: 0 6px 20px rgb(56 125 255 / 17%);
+  margin: 15px;
+}
+
+.sobrenos-xx >p{
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.feedback-input {
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #153473;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #343a44;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="enviar"] {
+  width: 100%;
+  background: #343a44;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  font-weight: 700;
+  text-align: center;
+}
+
+[type="enviar"]:hover {
+  background: #f7f9ff;
+}
+
+[value="ENVIAR"]:hover  {
+  background: #153473;
 }

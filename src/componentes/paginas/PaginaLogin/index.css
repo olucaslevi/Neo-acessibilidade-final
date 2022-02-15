@@ -1,13 +1,4 @@
-.pagdescription{
-    margin-top:30px;
-    align-items: center;
-    border:0px;
-    padding: 30px;
-    border-radius: 0px;
-    text-align: center;
-    background-color: rgba(238, 238, 238, 0);
-    font-size: 80px;
-}
+
 .div-button{
     background-color: #ffffffab;
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
@@ -38,7 +29,7 @@
     align-items: center;
     border:10px;
     border-radius: 200px;
-    padding: 50px;
+    padding: 25px;
     border-radius: 40px;
     text-align: center;
 

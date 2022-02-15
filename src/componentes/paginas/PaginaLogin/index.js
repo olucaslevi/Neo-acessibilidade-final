@@ -77,7 +77,7 @@ function Login(){
     
     return(
     <><div className="pagdescription">
-            <h0>LOGIN</h0>
+            <h1>LOGIN</h1>
         </div>
         <div className="box">
                 {user?
