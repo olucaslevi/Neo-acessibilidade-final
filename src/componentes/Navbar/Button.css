@@ -27,7 +27,7 @@ p {
   color: #f7f9ff !important;
   padding: 8px 20px !important;
   border: 1px solid var(--primary) !important;
-  transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out  !important;
 }
 
 .btn--medium {
